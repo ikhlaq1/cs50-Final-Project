@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Cs50</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Animated Swatch Book with CSS3 and jQuery" />
+        <meta name="keywords" content="swatch book, css3, jquery, animated, rotation, transition, folding fan" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style4.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+		
+			<header>
+			<h1><span>Swatch Book</span> for Cs50 Final Project</h1>
+					<h2>Ikhlaq Ul Firdous for Cs50 Harvard</h2>
+				
+				<nav class="codrops-demos">
+					<a href="../index.html">Home</a>
+					<a href="index.html">Lectures</a>
+					<a href="index2.html">Walkthroughs</a>
+					<a href="index3.html">Section</a>
+					<a href="index5.html">My Journey</a>
+				</nav>
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+			
+				<div id="sb-container" class="sb-container">
+				
+					<div>
+						<span><img src="images/malan.png"></span>
+						<h4><a href="#">This was Cs50</a></h4>
+					</div>
+					<div>
+						<span><img src="images/finishline.png"></span>
+						<h4><a href="#">Final project</a></h4>
+					</div>	
+					<div>
+						<span><img src="images/map.png"></span>
+						<h4><a href="#">Mashup</a></h4>
+					</div>	
+					<div>
+						<span><img src="images/csf.png"></span>
+						<h4><a href="#">Cs50 Finance</a></h4>
+					</div>	
+					<div>
+						<span><img src="images/php.png"></span>
+						<h4><a href="#">Php & SQL </a></h4>
+					</div>	
+					<div>
+						<span><img src="images/recover.png"></span>
+						<h4><a href="#">Recover</a></h4>
+					</div>	
+					<div>
+						<span><img src="images/caesar.png"></span>
+						<h4><a href="#">Ceasar Cipher</a></h4>											
+					</div>	
+					<div>
+						<span><img src="images/c-p.png"></span>
+						<h4><a href="#">C Programming</a></h4>											
+					</div>	
+					<div>
+						<span><img src="images/scratch.png"></span>
+						<h4><a href="#">scratch</a></h4>											
+					</div>	
+					<div>
+						<span><img src="images/cs50.png"></span>
+						<h4><a href="#">CS50</a></h4>											
+					</div>
+					<div>
+						<span class="sb-icon icon-globe"></span>
+						<h4><a href="#">EDX</a></h4>											
+					</div>
+					<div>
+						<h4><span>Journey in Cs50</span></h4>
+						<h5><span>I &hearts; Cs50</span></h5>											
+					</div>
+					
+					
+				</div><!-- sb-container -->
+				
+			</section>
+			
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook( {
+					speed : 500,
+					easing : 'ease-out',
+					// index of initial centered item
+					center : 7,
+					// number of degrees that is between each item
+					angleInc : 14,
+					// amount in degrees for the opened item's next sibling
+					proximity : 40,
+					// amount in degrees between the opened item's next siblings
+					neighbor : 2
+				} );
+			
+			});
+		</script>
+    </body>
+</html>

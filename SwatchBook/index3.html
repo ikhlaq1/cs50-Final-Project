@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Cs50</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Animated Swatch Book with CSS3 and jQuery" />
+        <meta name="keywords" content="swatch book, css3, jquery, animated, rotation, transition, folding fan" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+		
+			<header>
+			<h1><span>Swatch Book</span> for Cs50 Final Project</h1>
+					<h2>Ikhlaq Ul Firdous for Cs50 Harvard</h2>
+				
+				<nav class="codrops-demos">
+					<a href="../index.html">Home</a>
+					<a href="index.html">Lectures</a>
+					<a href="index2.html">Walkthroughs</a>
+					<a class="current-demo" href="index3.html">Section</a>
+					<a href="index5.html">My Journey</a>
+				</nav>
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+			
+				<div id="sb-container" class="sb-container">
+				
+					<div>
+						<span><img src="images/malan.png"></span>
+						<h4><a href="#">This was Cs50</a></h4>
+					</div>
+						
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/y5JmQItfFck?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">GDB</a></h4>
+					</div>	
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/Ui97-_n5xjo?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Bubble Sort</a></h4>
+					</div>	
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/5xlIPT1FRcA?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Binary search</a></h4>
+					</div>	
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/jtuMIHebSu8?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Functions</a></h4>											
+					</div>	
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/7EdaoE46BTI?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Arrays</a></h4>											
+					</div>	
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/JFieJW_kZq4?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Data Types</a></h4>											
+					</div>	
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/poT5Yd0Ag8I?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Command Line</a></h4>											
+					</div>
+					<div>
+						<span><iframe width="120" height="150" src="https://www.youtube.com/embed/XRvvitgap5Y?list=PLhQjrBD2T3816xq7BHLh4Yj6-v0TnvsrT" frameborder="0" allowfullscreen></iframe></span>
+						<h4><a href="#">Super Section</a></h4>											
+					</div>
+					<div>
+						<h4><span>Journey in Cs50</span></h4>
+						<h5><span>I &hearts; Cs50</span></h5>											
+					</div>
+					
+					
+				</div><!-- sb-container -->
+				
+			</section>
+			
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook( {
+					// number of degrees that is between each item
+					angleInc : 15,
+					neighbor : 15,
+					// if it should be closed by default
+					initclosed : true,
+					// index of the element that when clicked, triggers the open/close function
+					// by default there is no such element
+					closeIdx : 11
+				} );
+			
+			});
+		</script>
+    </body>
+</html>
